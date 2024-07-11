@@ -30,7 +30,7 @@ public class UserTests {
     @Test(priority = 1)
     public void createUserTest(){
     Response response = UserEndPoints.createUser(user);
-    response.then().log().all();
+    response.then().log().body();
     Assert.assertEquals(response.getStatusCode(),200);
 
     }
@@ -40,7 +40,7 @@ public class UserTests {
         String userNameToFind = this.user.getUsername();
         System.out.println("Find User : "+ userNameToFind);
         Response response = UserEndPoints.getUser(userNameToFind);
-        response.then().log().all();
+        response.then().log().body();
         Assert.assertEquals(response.getStatusCode(),200);
 
     }

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite" parallel="false">
+    <listeners>
+        <listener class-name="api.petstore.utilities.TestListener" />
+    </listeners>
+    <test name="API Tests">
+        <classes>
+            <class name="api.petstore.testcases.UserTests"/>
+            <class name="api.petstore.testcases.UserDataDrivenTests"/>
+            <!-- Add other test classes here -->
+        </classes>
+    </test>
+</suite>
