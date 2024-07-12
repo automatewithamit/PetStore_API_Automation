@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ExcelUtils {
     public static String[] getUserNameColumnValues(String fileName, String sheetName, String columnName) {
-        ExtentReportManager.getTest().log(Status.INFO, "Starting test with File: " + fileName + ", " + sheetName + ", " + columnName);
+        //ExtentReportManager.getTest().log(Status.INFO, "Starting test with File: " + fileName + ", " + sheetName + ", " + columnName);
         List<String> columnValues = new ArrayList<>();
         try (FileInputStream file = new FileInputStream(fileName);
              XSSFWorkbook workbook = new XSSFWorkbook(file)) {
@@ -82,7 +82,7 @@ public class ExcelUtils {
     }
 
 
-    public static String[][] getExcelData(String filePath, String sheetName) {
+    public static Object[][] getExcelData(String filePath, String sheetName) {
         List<Object[]> data = new ArrayList<>();
         try (FileInputStream file = new FileInputStream(filePath);
              XSSFWorkbook workbook = new XSSFWorkbook(file)) {
@@ -106,6 +106,6 @@ public class ExcelUtils {
             e.printStackTrace();
         }
 
-        return data.toArray(new String[0][0]);
+        return data.toArray(new Object[0][0]);
     }
 }
