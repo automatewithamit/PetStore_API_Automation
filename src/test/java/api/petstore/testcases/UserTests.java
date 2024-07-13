@@ -2,13 +2,15 @@ package api.petstore.testcases;
 
 import api.petstore.endpoints.UserEndPoints;
 import api.petstore.payloads.User;
+import api.petstore.reporting.ExtentReportManager;
+import com.aventstack.extentreports.Status;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class UserTests {
+public class UserTests extends  BaseTest{
     Faker faker;
     User user;
 
@@ -29,35 +31,45 @@ public class UserTests {
 
     @Test(priority = 1)
     public void createUserTest(){
+
+    ExtentReportManager.getTest().log(Status.INFO, "Starting Test to Create User with username : '"+ user.getUsername() + "'");
     Response response = UserEndPoints.createUser(user);
     response.then().log().body();
     Assert.assertEquals(response.getStatusCode(),200);
+        ExtentReportManager.getTest().log(Status.INFO, "User with username : '"+ user.getUsername() + "' CREATED Successfully");
 
     }
 
     @Test(priority = 2)
     public void getUserTest(){
         String userNameToFind = this.user.getUsername();
+        ExtentReportManager.getTest().log(Status.INFO, "Starting Test to Fetch User with username : '"+ user.getUsername() + "'");
         System.out.println("Find User : "+ userNameToFind);
         Response response = UserEndPoints.getUser(userNameToFind);
         response.then().log().body();
         Assert.assertEquals(response.getStatusCode(),200);
+        ExtentReportManager.getTest().log(Status.INFO, "User with username : '"+ user.getUsername() + "' FOUND");
 
     }
     @Test(priority = 3)
     public void updateUserTest(){
-        user.setFirstName(faker.name().firstName());
+        String newFirstName = faker.name().firstName();
+        ExtentReportManager.getTest().log(Status.INFO, "Starting Test to Update User's FirstName '"+user.getFirstName()+"' with new First Name : '"+ newFirstName + "'");
+        user.setFirstName(newFirstName);
         Response response = UserEndPoints.updateUser(this.user,this.user.getFirstName());
         response.then().log().body();
         Assert.assertEquals(response.getStatusCode(),200);
         System.out.println("Update User");
         response.then().log().body();
+        ExtentReportManager.getTest().log(Status.INFO, "User Updated with new firstname : '"+ newFirstName + "' Successfully");
     }
     @Test(priority = 4)
     public void deleteUserTest(){
+        ExtentReportManager.getTest().log(Status.INFO, "Starting Test to DELETE User with username : '"+ user.getUsername() + "'");
         Response response = UserEndPoints.deleteUser(this.user.getUsername());
         response.then().log().all();
         Assert.assertEquals(response.getStatusCode(),200);
+        ExtentReportManager.getTest().log(Status.INFO, "User with username : '"+ user.getUsername() + "' DELETED Successfully");
 
     }
 }

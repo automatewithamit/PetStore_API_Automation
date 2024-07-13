@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ExcelUtils {
     public static String[] getUserNameColumnValues(String fileName, String sheetName, String columnName) {
-        //ExtentReportManager.getTest().log(Status.INFO, "Starting test with File: " + fileName + ", " + sheetName + ", " + columnName);
+        ExtentReportManager.getTest().log(Status.INFO, "Starting test with File: " + fileName + ", " + sheetName + ", " + columnName);
         List<String> columnValues = new ArrayList<>();
         try (FileInputStream file = new FileInputStream(fileName);
              XSSFWorkbook workbook = new XSSFWorkbook(file)) {
@@ -83,6 +83,7 @@ public class ExcelUtils {
 
 
     public static Object[][] getExcelData(String filePath, String sheetName) {
+        ExtentReportManager.getTest().log(Status.INFO, "Starting test with File: " + filePath + ", " + sheetName);
         List<Object[]> data = new ArrayList<>();
         try (FileInputStream file = new FileInputStream(filePath);
              XSSFWorkbook workbook = new XSSFWorkbook(file)) {
