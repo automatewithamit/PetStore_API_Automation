@@ -34,6 +34,7 @@ public class UserDataDrivenTests extends BaseTest {
         response.then().log().body();
         //Validation
         Assert.assertEquals(response.getStatusCode(),200);
+        Logger.info("Successfully Created user with Username : {}",user.getUsername());
     }
     @Test(priority = 2, dataProvider = "getUserNameColumnValues",dataProviderClass = DataProviders.class)
     public void DeleteUserTest(String userName){
@@ -44,6 +45,7 @@ public class UserDataDrivenTests extends BaseTest {
         response.then().log().body();
         //Validation
         Assert.assertEquals(response.getStatusCode(),200);
+        Logger.info("Successfully Deleted user with Username : {}",userName);
     }
 
 

@@ -1,0 +1,21 @@
+23:39:45.261 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'marty.mante'
+23:39:51.142 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+23:39:52.457 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+23:39:53.834 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+23:47:38.274 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'jonathon.stiedemann'
+23:47:40.063 [main] INFO  PetStore_API_Automation - User with username : 'jonathon.stiedemann' CREATED Successfully
+23:47:40.065 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'jonathon.stiedemann'
+23:47:41.197 [main] INFO  PetStore_API_Automation - User with username : 'jonathon.stiedemann' FOUND
+23:47:41.203 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Wesley' with new First Name : 'Marty'
+23:47:42.687 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Marty' Successfully
+23:47:42.694 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'jonathon.stiedemann'
+23:47:44.068 [main] INFO  PetStore_API_Automation - User with username : 'jonathon.stiedemann' DELETED Successfully
+23:47:44.270 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+23:47:45.447 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+23:47:45.451 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+23:47:46.573 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+23:47:46.578 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+23:47:48.006 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+23:47:49.132 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+23:47:50.190 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+23:47:51.592 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
