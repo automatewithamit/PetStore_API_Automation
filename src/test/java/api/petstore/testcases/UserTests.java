@@ -76,6 +76,7 @@ public class UserTests extends  BaseTest{
         response.then().log().all();
         Assert.assertEquals(response.getStatusCode(),200);
         ExtentReportManager.getTest().log(Status.INFO, "User with username : '"+ user.getUsername() + "' DELETED Successfully");
-        Logger.info("User with username : '"+ user.getUsername() + "' DELETED Successfully");
+        Logger.info("User with username : '{}' DELETED Successfully", user.getUsername());
     }
+
 }
