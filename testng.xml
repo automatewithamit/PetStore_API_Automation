@@ -7,6 +7,7 @@
         <classes>
             <class name="api.petstore.testcases.UserTests"/>
             <class name="api.petstore.testcases.UserDataDrivenTests"/>
+            <class name="api.petstore.testcases.DBUserTests"/>
             <!-- Add other test classes here -->
         </classes>
     </test>
