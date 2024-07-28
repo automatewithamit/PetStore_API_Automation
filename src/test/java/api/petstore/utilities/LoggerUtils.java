@@ -17,6 +17,9 @@ public class LoggerUtils {
     public static void error(String message, Throwable throwable) {
         logger.error(message, throwable);
     }
+    public static void error(String message) {
+        logger.error(message);
+    }
 
     public static void warn(String message) {
         logger.warn(message);
