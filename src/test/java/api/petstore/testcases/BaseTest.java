@@ -13,11 +13,11 @@ import org.testng.annotations.BeforeClass;
 public class BaseTest {
 
     public static Logger Logger;
+    protected IDatabase database;
+
     public BaseTest(){
         Logger = LogManager.getLogger("PetStore_API_Automation");
     }
-
-    protected IDatabase database;
 
     @BeforeClass
     public void setUp() {

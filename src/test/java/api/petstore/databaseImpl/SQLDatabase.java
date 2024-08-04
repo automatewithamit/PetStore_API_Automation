@@ -1,6 +1,7 @@
 package api.petstore.databaseImpl;
 
 import api.petstore.interfaces.IDatabase;
+import api.petstore.payloads.User;
 import api.petstore.utilities.ConfigManager;
 import api.petstore.utilities.LoggerUtils;
 
@@ -9,6 +10,71 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+
+//S --> SRP --> Single Responsibility Principle
+//O --> OCP --> Open Close Principle
+//L --> LSP
+//I --> ISP --> Interface Segregation Principle
+
+interface IDeveloper {
+    public void code();
+
+}
+interface IDevLead {
+
+    public void assignWork();
+
+}
+interface IDevManager {
+
+    public void manageTeam();
+}
+
+class Developer implements IDeveloper {
+
+    @Override
+    public void code() {
+        System.out.println("code");
+    }
+
+}
+class DevLead implements IDeveloper,IDevLead {
+
+
+    @Override
+    public void code() {
+        System.out.println("code");
+    }
+
+    @Override
+    public void assignWork() {
+        System.out.println("I assign Task");
+    }
+
+
+}
+
+class DevManager implements IDevLead,IDevManager {
+
+    @Override
+    public void assignWork() {
+        System.out.println("I assign Task");
+    }
+
+    @Override
+    public void manageTeam() {
+        System.out.println("I manage Team");
+    }
+}
+
+
+
+
+
+
+
+
 
 // O: Open/Closed Principle - Class is open for extension but closed for modification
 public class SQLDatabase implements IDatabase {
@@ -47,10 +113,16 @@ public class SQLDatabase implements IDatabase {
         ResultSet resultSet = null;
         try {
             Statement statement = connection.createStatement();
-            resultSet = statement.executeQuery(query);
+            if (query.trim().toUpperCase().startsWith("SELECT")) {
+                resultSet = statement.executeQuery(query);
+            } else {
+                statement.executeUpdate(query);
+            }
+
         } catch (SQLException e) {
             LoggerUtils.error("Failed to execute query: " + query, e);
         }
         return resultSet;
     }
+
 }

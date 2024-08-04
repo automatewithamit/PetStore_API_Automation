@@ -1,5 +1,7 @@
 package api.petstore.interfaces;
 
+import api.petstore.payloads.User;
+
 import java.sql.ResultSet;
 
 // S: Single Responsibility Principle - Defines common database operations
@@ -8,4 +10,5 @@ public interface IDatabase {
     void connect();
     void disconnect();
     ResultSet executeQuery(String query);
+
 }
