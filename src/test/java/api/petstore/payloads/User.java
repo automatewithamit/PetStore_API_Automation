@@ -1,5 +1,7 @@
 package api.petstore.payloads;
 
+import org.bson.Document;
+
 public class User {
 
     int id;
@@ -10,6 +12,7 @@ public class User {
     String password;
     String phone;
     int userStatus;
+
 
     public int getId() {
         return id;
@@ -74,5 +77,26 @@ public class User {
 
     public void setUserStatus(int userStatus) {
         this.userStatus = userStatus;
+    }
+    public Document toDocument() {
+        return new Document("_id", id)
+                .append("username", username)
+                .append("firstName", firstName)
+                .append("lastName", lastName)
+                .append("email", email)
+                .append("password", password)
+                .append("phone", phone);
+    }
+
+    public static User fromDocument(Document document) {
+        User user = new User();
+        user.setId(Integer.parseInt(document.getString("_id")));
+        user.setUsername(document.getString("username"));
+        user.setFirstName(document.getString("firstName"));
+        user.setLastName(document.getString("lastName"));
+        user.setEmail(document.getString("email"));
+        user.setPassword(document.getString("password"));
+        user.setPhone(document.getString("phone"));
+        return user;
     }
 }

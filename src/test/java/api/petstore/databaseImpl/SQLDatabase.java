@@ -1,6 +1,7 @@
 package api.petstore.databaseImpl;
 
 import api.petstore.interfaces.IDatabase;
+import api.petstore.interfaces.ISQLDatabase;
 import api.petstore.payloads.User;
 import api.petstore.utilities.ConfigManager;
 import api.petstore.utilities.LoggerUtils;
@@ -14,72 +15,14 @@ import java.sql.Statement;
 
 //S --> SRP --> Single Responsibility Principle
 //O --> OCP --> Open Close Principle
-//L --> LSP
+//L --> LSP --> Liskov Substitution Principle
 //I --> ISP --> Interface Segregation Principle
-
-interface IDeveloper {
-    public void code();
-
-}
-interface IDevLead {
-
-    public void assignWork();
-
-}
-interface IDevManager {
-
-    public void manageTeam();
-}
-
-class Developer implements IDeveloper {
-
-    @Override
-    public void code() {
-        System.out.println("code");
-    }
-
-}
-class DevLead implements IDeveloper,IDevLead {
-
-
-    @Override
-    public void code() {
-        System.out.println("code");
-    }
-
-    @Override
-    public void assignWork() {
-        System.out.println("I assign Task");
-    }
-
-
-}
-
-class DevManager implements IDevLead,IDevManager {
-
-    @Override
-    public void assignWork() {
-        System.out.println("I assign Task");
-    }
-
-    @Override
-    public void manageTeam() {
-        System.out.println("I manage Team");
-    }
-}
-
-
-
-
-
-
-
-
-
+//D --> DIP --> Dependency Injection Principle
 // O: Open/Closed Principle - Class is open for extension but closed for modification
-public class SQLDatabase implements IDatabase {
+public class SQLDatabase implements ISQLDatabase {
 
     private static Connection connection;
+
 
     // L: Liskov Substitution Principle - Ensures this class can be used wherever the Database interface is expected
     @Override
@@ -109,15 +52,22 @@ public class SQLDatabase implements IDatabase {
     }
 
     @Override
+    public void executeUpdate(String query) {
+        try {
+            Statement statement = connection.createStatement();
+
+            statement.executeUpdate(query);
+        } catch (SQLException e) {
+            LoggerUtils.error("Failed to execute query: " + query, e);
+        }
+    }
+
+    @Override
     public ResultSet executeQuery(String query) {
         ResultSet resultSet = null;
         try {
             Statement statement = connection.createStatement();
-            if (query.trim().toUpperCase().startsWith("SELECT")) {
-                resultSet = statement.executeQuery(query);
-            } else {
-                statement.executeUpdate(query);
-            }
+            resultSet = statement.executeQuery(query);
 
         } catch (SQLException e) {
             LoggerUtils.error("Failed to execute query: " + query, e);

@@ -2,11 +2,9 @@ package api.petstore.testcases;
 
 import api.petstore.databaseImpl.SQLDatabase;
 import api.petstore.endpoints.UserEndPoints;
+import api.petstore.interfaces.ISQLDatabase;
 import api.petstore.payloads.User;
-import api.petstore.reporting.ExtentReportManager;
-import api.petstore.utilities.DBUtils;
 import api.petstore.utilities.LoggerUtils;
-import com.aventstack.extentreports.Status;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -17,7 +15,19 @@ import java.sql.SQLException;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class DBUserTests extends BaseTest {
+public class SQLDatabaseTests extends BaseTest_DB<ISQLDatabase> {
+
+
+    @Override
+    protected ISQLDatabase createDatabase() {
+        return new SQLDatabase();
+    }
+
+    @Override
+    protected String getDatabaseType() {
+        return "sql";
+    }
+
     Faker faker;
     User user;
     @BeforeClass
@@ -73,7 +83,7 @@ public class DBUserTests extends BaseTest {
                 user.getPhone() + "')";
         //ExtentReportManager.getTest().log(Status.INFO, "Query used : "+query);
         Logger.info("Query used : {}", query);
-        database.executeQuery(query);
+        database.executeUpdate(query);
         //ExtentReportManager.getTest().log(Status.INFO, "User with username : '"+ user.getUsername() + "' CREATED  using DB");
         Logger.info("User with username : '{}' CREATED Successfully using DB ", user.getUsername());
 
@@ -113,8 +123,6 @@ public class DBUserTests extends BaseTest {
         //assert both users are same
 
     }
-
-
 
     @Test
     public void testCreateUserAndVerifyInOracleDatabase() {

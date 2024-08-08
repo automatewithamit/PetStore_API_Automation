@@ -7,7 +7,8 @@
         <classes>
             <class name="api.petstore.testcases.UserTests"/>
             <class name="api.petstore.testcases.UserDataDrivenTests"/>
-            <class name="api.petstore.testcases.DBUserTests"/>
+            <class name="api.petstore.testcases.SQLDatabaseTests"/>
+            <class name="api.petstore.testcases.MongoDatabaseTests"/>
             <!-- Add other test classes here -->
         </classes>
     </test>

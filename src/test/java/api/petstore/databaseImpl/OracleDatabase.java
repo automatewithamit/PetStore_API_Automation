@@ -6,13 +6,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import api.petstore.interfaces.IBaseDatabase;
 import api.petstore.interfaces.IDatabase;
+import api.petstore.interfaces.IOracleDatabase;
 import api.petstore.utilities.ConfigManager;
 import api.petstore.utilities.LoggerUtils;
 import oracle.jdbc.OracleDriver;
 
 // O: Open/Closed Principle - Class is open for extension but closed for modification
-public class OracleDatabase implements IDatabase {
+public class OracleDatabase implements IOracleDatabase {
+
 
     private static Connection connection;
 
@@ -41,6 +44,17 @@ public class OracleDatabase implements IDatabase {
             }
         } catch (SQLException e) {
             LoggerUtils.error("Failed to disconnect from the Oracle database.", e);
+        }
+    }
+
+    @Override
+    public void executeUpdate(String query) {
+        try {
+            Statement statement = connection.createStatement();
+
+            statement.executeUpdate(query);
+        } catch (SQLException e) {
+            LoggerUtils.error("Failed to execute query: " + query, e);
         }
     }
 

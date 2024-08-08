@@ -1,10 +1,11 @@
 package api.petstore.databaseImpl;
 
 import api.petstore.interfaces.IDatabase;
+import api.petstore.interfaces.IDynamoDatabase;
 
 import java.sql.ResultSet;
 
-public class MongoDB implements IDatabase {
+public class DynamoDatabase implements IDynamoDatabase {
     @Override
     public void connect() {
 
@@ -15,8 +16,4 @@ public class MongoDB implements IDatabase {
 
     }
 
-    @Override
-    public ResultSet executeQuery(String query) {
-        return null;
-    }
 }
