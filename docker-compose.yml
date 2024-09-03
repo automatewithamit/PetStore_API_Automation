@@ -1,12 +1,43 @@
-version: '3.8'
+version: '3.1'
+
 services:
-  mongodb:
-    image: mongo
-    container_name: mongodb
+  mongo:
+    image: mongo:latest
+    container_name: mongodb_petstore_container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: petstore_admin
+      MONGO_INITDB_ROOT_PASSWORD: PetStore@123
     ports:
-      - "27017:27017"
+      - 27017:27017
+
+  # MySQL Service
+  mysqldb:
+    image: mysql:latest
+    container_name: petstore_sqlcontainer
+    environment:
+      MYSQL_ROOT_PASSWORD: PetStore@123
+      MYSQL_DATABASE: petstore_database
+      MYSQL_USER: petstoreuser
+      MYSQL_PASSWORD: PetStore@123
+    ports:
+      - "3306:3306"
     volumes:
-      - mongo-data:/data/db
+      - mysql-data:/var/lib/mysql
+
+  # OracleDB Service
+  oracledb:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: oracledb
+    platform: linux/amd64   # For ARM-based Macs, ignore if not needed
+    environment:
+      ORACLE_PASSWORD: PetStore@123    # Set the SYS and SYSTEM password
+    ports:
+      - "1521:1521"
+      - "8081:8080"
+    volumes:
+      - oracle-data:/opt/oracle/oradata
 
 volumes:
   mongo-data:
+  mysql-data:
+  oracle-data:

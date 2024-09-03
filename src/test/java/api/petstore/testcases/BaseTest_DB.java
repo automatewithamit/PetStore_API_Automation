@@ -9,21 +9,15 @@ import org.testng.annotations.BeforeClass;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-//
-//To ensure that the executeQuery and other methods from SQLDatabase, OracleDatabase, and MongoDatabase are accessible,
-//we need to correctly typecast the database field in the SQLDatabaseTests class.
-//Additionally, we should ensure that the database field in DatabaseBaseTest is of the correct type (ISQLDatabase for SQL tests).
-//Below is how you can achieve this:
-//1. Ensure Proper Type Casting: When accessing methods specific to ISQLDatabase, we need to cast the database field properly.
-//2. Generic Base Test Class: Create a generic DatabaseBaseTest class that can work with different types of databases.
-//3. Use Polymorphism Correctly: Ensure each specific test class knows which database type it’s working with.
 
 public abstract class BaseTest_DB<T extends IBaseDatabase> {
     protected T database;
     public static Logger Logger;
-    public BaseTest_DB(){
+
+    public BaseTest_DB() {
         Logger = LogManager.getLogger("PetStore_API_Automation");
     }
+
     @BeforeClass
     public void setUp() {
         startDatabase();
@@ -41,7 +35,10 @@ public abstract class BaseTest_DB<T extends IBaseDatabase> {
         stopDatabase();
     }
 
+    // Abstract method to create the specific database instance (SQL, Oracle, MongoDB, etc.)
     protected abstract T createDatabase();
+
+    // Abstract method to get the type of the database (e.g., "sql", "oracle", "mongodb")
     protected abstract String getDatabaseType();
 
     private void startDatabase() {
@@ -49,7 +46,7 @@ public abstract class BaseTest_DB<T extends IBaseDatabase> {
             String databaseType = getDatabaseType();
             ProcessBuilder processBuilder;
             if (System.getProperty("os.name").toLowerCase().contains("win")) {
-                processBuilder = new ProcessBuilder("powershell.exe", "./start-database.sh", databaseType);
+                processBuilder = new ProcessBuilder("powershell.exe", "-ExecutionPolicy", "Bypass", "-File", "./start-database.ps1", databaseType);
             } else {
                 processBuilder = new ProcessBuilder("/bin/bash", "-c", "./start-database.sh " + databaseType);
             }
@@ -71,7 +68,7 @@ public abstract class BaseTest_DB<T extends IBaseDatabase> {
             String databaseType = getDatabaseType();
             ProcessBuilder processBuilder;
             if (System.getProperty("os.name").toLowerCase().contains("win")) {
-                processBuilder = new ProcessBuilder("powershell.exe", "./stop-database.sh", databaseType);
+                processBuilder = new ProcessBuilder("powershell.exe", "-ExecutionPolicy", "Bypass", "-File", "./stop-database.ps1", databaseType);
             } else {
                 processBuilder = new ProcessBuilder("/bin/bash", "-c", "./stop-database.sh " + databaseType);
             }
@@ -87,21 +84,4 @@ public abstract class BaseTest_DB<T extends IBaseDatabase> {
             e.printStackTrace();
         }
     }
-//    @BeforeClass
-//    public void setUp() {
-//        database = createDatabase();
-//        database.connect();
-//        Logger.info("Database connection established.");
-//    }
-//
-//    @AfterClass
-//    public void tearDown() {
-//        if (database != null) {
-//            database.disconnect();
-//            Logger.info("Database connection closed.");
-//        }
-//    }
-//
-//    protected abstract T createDatabase();
 }
-

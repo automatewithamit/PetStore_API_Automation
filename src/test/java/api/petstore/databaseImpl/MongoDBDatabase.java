@@ -14,31 +14,15 @@ public class MongoDBDatabase implements IMongoDatabase {
 
     @Override
     public void connect() {
-        String connectionString = ConfigManager.getInstance().getProperty("mongo.connectionString");
-        mongoClient = MongoClients.create(connectionString);
-        String dbName = ConfigManager.getInstance().getProperty("mongo.dbname");
-        database = (MongoDatabase) mongoClient.getDatabase(dbName);
+        // Extracting the connection string and database name from the configuration file
+        String connectionString = ConfigManager.getInstance().getProperty("mongoDbUrl");
+        String dbName = ConfigManager.getInstance().getProperty("mongoDbName");
+
+        // Creating the MongoDB client and connecting to the specified database
+        this.mongoClient = MongoClients.create(connectionString);
+        this.database = mongoClient.getDatabase(dbName);
     }
 
-    @Override
-    public void insertDocument(String collectionName, Document document) {
-        database.getCollection(collectionName).insertOne(document);
-    }
-
-    @Override
-    public Document findDocumentById(String collectionName, String id) {
-        return database.getCollection(collectionName).find(new Document("_id", id)).first();
-    }
-
-    @Override
-    public void updateDocument(String collectionName, String id, Document updatedDocument) {
-        database.getCollection(collectionName).updateOne(new Document("_id", id), new Document("$set", updatedDocument));
-    }
-
-    @Override
-    public void deleteDocument(String collectionName, String id) {
-        database.getCollection(collectionName).deleteOne(new Document("_id", id));
-    }
 
     @Override
     public void disconnect() {
@@ -46,4 +30,20 @@ public class MongoDBDatabase implements IMongoDatabase {
             mongoClient.close();
         }
     }
+
+    @Override
+    public MongoClient getClient() {
+        return this.mongoClient;
+    }
+
+    @Override
+    public MongoDatabase getDatabase(String dbName) {
+        return this.database;
+    }
+
+    public Document findUserByUsername(String username) {
+        return database.getCollection("users").find(new Document("username", username)).first();
+    }
+
+
 }
