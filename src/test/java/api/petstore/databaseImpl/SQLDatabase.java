@@ -18,10 +18,11 @@ import java.sql.Statement;
 //L --> LSP --> Liskov Substitution Principle
 //I --> ISP --> Interface Segregation Principle
 //D --> DIP --> Dependency Injection Principle
-// O: Open/Closed Principle - Class is open for extension but closed for modification
+//O: Open/Closed Principle - Class is open for extension but closed for modification
 public class SQLDatabase implements ISQLDatabase {
 
     private static Connection connection;
+
 
 
     // L: Liskov Substitution Principle - Ensures this class can be used wherever the Database interface is expected

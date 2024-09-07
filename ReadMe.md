@@ -113,7 +113,7 @@ Option 1: Install MongoDB Locally
 
 
     1. Windows:
-    --------
+
     Download MongoDB from MongoDB Download Center. https://www.mongodb.com/try/download/community 
     Follow the installation instructions for your OS.
 

@@ -14,7 +14,6 @@ import org.testng.annotations.BeforeClass;
 public abstract class BaseTest {
 
     public static Logger Logger;
-    protected IBaseDatabase database;
 
     public BaseTest() {
         Logger = LogManager.getLogger("PetStore_API_Automation");
@@ -22,12 +21,11 @@ public abstract class BaseTest {
 
     @BeforeClass
     public void setUp() {
-        Logger.info("Database connection established.");
+
     }
 
     @AfterClass
     public void tearDown() {
-        Logger.info("Database connection closed.");
 
     }
 
