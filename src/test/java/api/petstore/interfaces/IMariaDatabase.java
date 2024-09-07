@@ -1,4 +1,4 @@
 package api.petstore.interfaces;
 
-public interface IMariaDatabase {
+public interface IMariaDatabase extends  IBaseDatabase {
 }
