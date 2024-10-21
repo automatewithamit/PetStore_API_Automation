@@ -485,3 +485,960 @@
 01:03:36.494 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'elfriede.roberts'
 01:03:36.494 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'elfriede.roberts'
 01:03:36.503 [main] INFO  PetStore_API_Automation - 173259631 is Matching with DB and API Response
+20:40:43.217 [main] INFO  PetStore_API_Automation - Database connection established.
+20:40:43.283 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'alton.altenwerth'
+20:40:44.974 [main] INFO  PetStore_API_Automation - User with username : 'alton.altenwerth' CREATED Successfully
+20:40:44.976 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'alton.altenwerth'
+20:40:46.092 [main] INFO  PetStore_API_Automation - User with username : 'alton.altenwerth' FOUND
+20:40:46.098 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Akilah' with new First Name : 'Margurite'
+20:40:47.241 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Margurite' Successfully
+20:40:47.244 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'alton.altenwerth'
+20:40:48.576 [main] INFO  PetStore_API_Automation - User with username : 'alton.altenwerth' DELETED Successfully
+20:40:48.579 [main] INFO  PetStore_API_Automation - Database connection closed.
+20:40:48.580 [main] INFO  PetStore_API_Automation - Database connection established.
+20:40:48.763 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+20:40:50.025 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+20:40:50.028 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+20:40:51.089 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+20:40:51.092 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+20:40:52.197 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+20:40:53.291 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+20:40:54.713 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+20:40:55.839 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+20:40:55.842 [main] INFO  PetStore_API_Automation - Database connection closed.
+20:40:55.843 [main] INFO  PetStore_API_Automation - Database connection established.
+20:40:55.874 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'burt.bednar'
+20:40:57.069 [main] INFO  PetStore_API_Automation - User with username : 'burt.bednar' CREATED Successfully using API 
+20:40:57.069 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'burt.bednar'
+20:40:57.075 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (761069599, 'burt.bednar', 'Coy', 'Nikolaus', 'antonia.lindgren@yahoo.com', 'null', '1-501-557-3823')
+20:40:57.090 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:34:33.547 [main] INFO  PetStore_API_Automation - Database connection established.
+22:34:42.200 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'stephen.homenick'
+22:35:46.245 [main] INFO  PetStore_API_Automation - User with username : 'stephen.homenick' CREATED Successfully using API 
+22:35:49.858 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'stephen.homenick'
+22:37:04.398 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (485047320, 'stephen.homenick', 'Salvador', 'Olson', 'carroll.smitham@yahoo.com', 'null', '527.942.3014')
+22:38:59.168 [main] INFO  PetStore_API_Automation - User with username : 'stephen.homenick' CREATED Successfully using DB 
+22:39:35.906 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'stephen.homenick'
+22:40:01.301 [main] INFO  PetStore_API_Automation - User with username : 'stephen.homenick' FOUND
+22:40:08.052 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'stephen.homenick'
+22:40:17.379 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'stephen.homenick'
+22:40:55.460 [main] INFO  PetStore_API_Automation - Database connection established.
+22:40:58.381 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'willette.paucek'
+22:41:06.302 [main] INFO  PetStore_API_Automation - User with username : 'willette.paucek' CREATED Successfully using API 
+22:41:07.237 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'willette.paucek'
+22:41:10.066 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (1541075662, 'willette.paucek', 'Elba', 'Schneider', 'alica.beier@hotmail.com', 'null', '445.884.6869')
+22:41:19.911 [main] INFO  PetStore_API_Automation - User with username : 'willette.paucek' CREATED Successfully using DB 
+22:41:44.605 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'willette.paucek'
+22:41:46.121 [main] INFO  PetStore_API_Automation - User with username : 'willette.paucek' FOUND
+22:41:46.121 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'willette.paucek'
+22:41:46.122 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'willette.paucek'
+22:41:46.223 [main] INFO  PetStore_API_Automation - 1541075662 is Matching with DB and API Response
+22:41:46.225 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:46:57.945 [main] INFO  PetStore_API_Automation - Database connection established.
+22:46:58.010 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'harris.jast'
+22:46:59.611 [main] INFO  PetStore_API_Automation - User with username : 'harris.jast' CREATED Successfully
+22:46:59.622 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'harris.jast'
+22:47:00.903 [main] INFO  PetStore_API_Automation - User with username : 'harris.jast' FOUND
+22:47:00.907 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Greg' with new First Name : 'Brad'
+22:47:02.024 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Brad' Successfully
+22:47:02.027 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'harris.jast'
+22:47:03.029 [main] INFO  PetStore_API_Automation - User with username : 'harris.jast' DELETED Successfully
+22:47:03.032 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:47:03.033 [main] INFO  PetStore_API_Automation - Database connection established.
+22:47:03.218 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+22:47:04.383 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+22:47:04.386 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+22:47:05.388 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+22:47:05.391 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+22:47:06.655 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+22:47:07.669 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+22:47:08.889 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+22:47:10.145 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+22:47:10.148 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:47:10.257 [main] INFO  PetStore_API_Automation - Database connection established.
+22:47:10.270 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'agustin.harvey'
+22:47:11.296 [main] INFO  PetStore_API_Automation - User with username : 'agustin.harvey' CREATED Successfully using API 
+22:47:11.297 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'agustin.harvey'
+22:47:11.302 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (1823741948, 'agustin.harvey', 'Dewayne', 'Thiel', 'iliana.rau@yahoo.com', 'null', '(241) 537-1210')
+22:47:11.314 [main] INFO  PetStore_API_Automation - User with username : 'agustin.harvey' CREATED Successfully using DB 
+22:47:11.315 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'agustin.harvey'
+22:47:12.474 [main] INFO  PetStore_API_Automation - User with username : 'agustin.harvey' FOUND
+22:47:12.475 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'agustin.harvey'
+22:47:12.475 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'agustin.harvey'
+22:47:12.486 [main] INFO  PetStore_API_Automation - 1823741948 is Matching with DB and API Response
+22:47:12.497 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:47:12.534 [main] INFO  PetStore_API_Automation - Database connection established.
+22:47:42.561 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:02:26.496 [main] INFO  PetStore_API_Automation - Database connection established.
+23:02:26.558 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'frances.ullrich'
+23:02:28.200 [main] INFO  PetStore_API_Automation - User with username : 'frances.ullrich' CREATED Successfully
+23:02:28.202 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'frances.ullrich'
+23:02:29.472 [main] INFO  PetStore_API_Automation - User with username : 'frances.ullrich' FOUND
+23:02:29.477 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Jeanelle' with new First Name : 'Rosaura'
+23:02:30.824 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Rosaura' Successfully
+23:02:30.826 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'frances.ullrich'
+23:02:32.001 [main] INFO  PetStore_API_Automation - User with username : 'frances.ullrich' DELETED Successfully
+23:02:32.004 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:02:32.005 [main] INFO  PetStore_API_Automation - Database connection established.
+23:02:32.184 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+23:02:33.257 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+23:02:33.260 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+23:02:34.518 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+23:02:34.521 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+23:02:35.715 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+23:02:36.743 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+23:02:38.174 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+23:02:39.299 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+23:02:39.301 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:02:39.419 [main] INFO  PetStore_API_Automation - Database connection established.
+23:02:39.431 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'angel.kunde'
+23:02:40.535 [main] INFO  PetStore_API_Automation - User with username : 'angel.kunde' CREATED Successfully using API 
+23:02:40.536 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'angel.kunde'
+23:02:40.541 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (1823741948, 'angel.kunde', 'Kaylene', 'Schmidt', 'graciela.denesik@yahoo.com', 'null', '880-752-3843')
+23:02:40.584 [main] INFO  PetStore_API_Automation - User with username : 'angel.kunde' CREATED Successfully using DB 
+23:02:40.584 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'angel.kunde'
+23:02:41.904 [main] INFO  PetStore_API_Automation - User with username : 'angel.kunde' FOUND
+23:02:41.905 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'angel.kunde'
+23:02:41.905 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'angel.kunde'
+23:02:41.915 [main] INFO  PetStore_API_Automation - 1823741948 is Matching with DB and API Response
+23:02:41.925 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:02:41.962 [main] INFO  PetStore_API_Automation - Database connection established.
+23:02:41.963 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:07:45.271 [main] INFO  PetStore_API_Automation - Database connection established.
+00:07:45.336 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'nathaniel.klocko'
+00:07:46.900 [main] INFO  PetStore_API_Automation - User with username : 'nathaniel.klocko' CREATED Successfully
+00:07:46.901 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'nathaniel.klocko'
+00:07:48.034 [main] INFO  PetStore_API_Automation - User with username : 'nathaniel.klocko' FOUND
+00:07:48.038 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Dale' with new First Name : 'Nieves'
+00:07:49.304 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Nieves' Successfully
+00:07:49.308 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'nathaniel.klocko'
+00:07:50.351 [main] INFO  PetStore_API_Automation - User with username : 'nathaniel.klocko' DELETED Successfully
+00:07:50.354 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:07:50.354 [main] INFO  PetStore_API_Automation - Database connection established.
+00:07:50.534 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+00:07:51.558 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+00:07:51.562 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+00:07:52.942 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+00:07:52.945 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+00:07:54.275 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+00:07:55.303 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+00:07:56.629 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+00:07:58.057 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+00:07:58.060 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:07:58.174 [main] INFO  PetStore_API_Automation - Database connection established.
+00:07:58.188 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'adella.conn'
+00:07:59.423 [main] INFO  PetStore_API_Automation - User with username : 'adella.conn' CREATED Successfully using API 
+00:07:59.424 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'adella.conn'
+00:07:59.429 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (1798538641, 'adella.conn', 'Gearldine', 'Glover', 'rolland.bechtelar@yahoo.com', 'null', '(595) 707-1433')
+00:07:59.444 [main] INFO  PetStore_API_Automation - User with username : 'adella.conn' CREATED Successfully using DB 
+00:07:59.445 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'adella.conn'
+00:08:00.441 [main] INFO  PetStore_API_Automation - User with username : 'adella.conn' FOUND
+00:08:00.442 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'adella.conn'
+00:08:00.443 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'adella.conn'
+00:08:00.453 [main] INFO  PetStore_API_Automation - 1798538641 is Matching with DB and API Response
+00:08:00.463 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:08:00.504 [main] INFO  PetStore_API_Automation - Database connection established.
+00:08:00.506 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:15:36.932 [main] INFO  PetStore_API_Automation - Database connection established.
+00:15:36.996 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'diann.streich'
+00:15:38.709 [main] INFO  PetStore_API_Automation - User with username : 'diann.streich' CREATED Successfully
+00:15:38.711 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'diann.streich'
+00:15:39.734 [main] INFO  PetStore_API_Automation - User with username : 'diann.streich' FOUND
+00:15:39.738 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Geoffrey' with new First Name : 'Annemarie'
+00:15:41.016 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Annemarie' Successfully
+00:15:41.019 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'diann.streich'
+00:15:42.026 [main] INFO  PetStore_API_Automation - User with username : 'diann.streich' DELETED Successfully
+00:15:42.030 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:15:42.031 [main] INFO  PetStore_API_Automation - Database connection established.
+00:15:42.212 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+00:15:43.261 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+00:15:43.264 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+00:15:44.291 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+00:15:44.294 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+00:15:45.721 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+00:15:47.078 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+00:15:48.133 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+00:15:49.515 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+00:15:49.517 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:15:49.639 [main] INFO  PetStore_API_Automation - Database connection established.
+00:15:49.652 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'juliane.greenholt'
+00:15:50.844 [main] INFO  PetStore_API_Automation - User with username : 'juliane.greenholt' CREATED Successfully using API 
+00:15:50.845 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'juliane.greenholt'
+00:15:50.849 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (1798538641, 'juliane.greenholt', 'Minh', 'Larson', 'jalisa.lang@hotmail.com', 'null', '(568) 790-9087')
+00:15:50.885 [main] INFO  PetStore_API_Automation - User with username : 'juliane.greenholt' CREATED Successfully using DB 
+00:15:50.885 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'juliane.greenholt'
+00:15:52.177 [main] INFO  PetStore_API_Automation - User with username : 'juliane.greenholt' FOUND
+00:15:52.177 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'juliane.greenholt'
+00:15:52.178 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'juliane.greenholt'
+00:15:52.193 [main] INFO  PetStore_API_Automation - 1798538641 is Matching with DB and API Response
+00:15:52.201 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:15:52.241 [main] INFO  PetStore_API_Automation - Database connection established.
+00:15:52.243 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:37:58.249 [main] INFO  PetStore_API_Automation - Database connection established.
+00:37:58.315 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'darwin.vandervort'
+00:38:00.258 [main] INFO  PetStore_API_Automation - User with username : 'darwin.vandervort' CREATED Successfully
+00:38:00.260 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'darwin.vandervort'
+00:38:01.253 [main] INFO  PetStore_API_Automation - User with username : 'darwin.vandervort' FOUND
+00:38:01.257 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Oliver' with new First Name : 'Timmy'
+00:38:02.318 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Timmy' Successfully
+00:38:02.321 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'darwin.vandervort'
+00:38:03.492 [main] INFO  PetStore_API_Automation - User with username : 'darwin.vandervort' DELETED Successfully
+00:38:03.495 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:38:03.496 [main] INFO  PetStore_API_Automation - Database connection established.
+00:38:03.675 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+00:38:04.922 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+00:38:04.925 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+00:38:06.993 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+00:38:06.995 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+00:38:08.300 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+00:38:09.425 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+00:38:10.858 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+00:38:12.067 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+00:38:12.069 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:38:12.191 [main] INFO  PetStore_API_Automation - Database connection established.
+00:38:12.204 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'ayako.kuvalis'
+00:38:13.246 [main] INFO  PetStore_API_Automation - User with username : 'ayako.kuvalis' CREATED Successfully using API 
+00:38:13.246 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'ayako.kuvalis'
+00:38:13.251 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (859984241, 'ayako.kuvalis', 'Shannon', 'Reichel', 'eugene.schoen@hotmail.com', 'null', '(816) 284-2423')
+00:38:13.266 [main] INFO  PetStore_API_Automation - User with username : 'ayako.kuvalis' CREATED Successfully using DB 
+00:38:13.267 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'ayako.kuvalis'
+00:38:14.453 [main] INFO  PetStore_API_Automation - User with username : 'ayako.kuvalis' FOUND
+00:38:14.454 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'ayako.kuvalis'
+00:38:14.455 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'ayako.kuvalis'
+00:38:14.467 [main] INFO  PetStore_API_Automation - 859984241 is Matching with DB and API Response
+00:38:14.477 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:38:14.515 [main] INFO  PetStore_API_Automation - Database connection established.
+00:38:14.517 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:39:07.633 [main] INFO  PetStore_API_Automation - Database connection established.
+00:39:07.696 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'dusty.abshire'
+00:39:09.212 [main] INFO  PetStore_API_Automation - User with username : 'dusty.abshire' CREATED Successfully
+00:39:09.214 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'dusty.abshire'
+00:39:10.487 [main] INFO  PetStore_API_Automation - User with username : 'dusty.abshire' FOUND
+00:39:10.491 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Jule' with new First Name : 'Randal'
+00:39:11.697 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Randal' Successfully
+00:39:11.701 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'dusty.abshire'
+00:39:12.934 [main] INFO  PetStore_API_Automation - User with username : 'dusty.abshire' DELETED Successfully
+00:39:12.937 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:39:12.939 [main] INFO  PetStore_API_Automation - Database connection established.
+00:39:13.118 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+00:39:14.108 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+00:39:14.111 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+00:39:15.474 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+00:39:15.477 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+00:39:16.703 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+00:39:17.829 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+00:39:18.829 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+00:39:20.287 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+00:39:20.289 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:39:21.194 [main] INFO  PetStore_API_Automation - Database connection established.
+00:39:21.208 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'garrett.daugherty'
+00:39:22.436 [main] INFO  PetStore_API_Automation - User with username : 'garrett.daugherty' CREATED Successfully using API 
+00:39:22.437 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'garrett.daugherty'
+00:39:22.441 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'garrett.daugherty', 'Danyel', 'Mosciski', 'rogelio.olson@yahoo.com', 'null', '1-902-912-6470')
+00:39:22.453 [main] INFO  PetStore_API_Automation - User with username : 'garrett.daugherty' CREATED Successfully using DB 
+00:39:22.454 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'garrett.daugherty'
+00:39:23.563 [main] INFO  PetStore_API_Automation - User with username : 'garrett.daugherty' FOUND
+00:39:23.563 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'garrett.daugherty'
+00:39:23.564 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'garrett.daugherty'
+00:39:23.575 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+00:39:23.584 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:39:24.364 [main] INFO  PetStore_API_Automation - Database connection established.
+00:39:24.366 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:46:21.762 [main] INFO  PetStore_API_Automation - Database connection established.
+00:46:21.827 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'bonnie.lakin'
+00:46:23.654 [main] INFO  PetStore_API_Automation - User with username : 'bonnie.lakin' CREATED Successfully
+00:46:23.656 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'bonnie.lakin'
+00:46:24.739 [main] INFO  PetStore_API_Automation - User with username : 'bonnie.lakin' FOUND
+00:46:24.743 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Gertie' with new First Name : 'Scot'
+00:46:26.274 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Scot' Successfully
+00:46:26.277 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'bonnie.lakin'
+00:46:27.816 [main] INFO  PetStore_API_Automation - User with username : 'bonnie.lakin' DELETED Successfully
+00:46:27.819 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:46:27.820 [main] INFO  PetStore_API_Automation - Database connection established.
+00:46:28.003 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+00:46:29.292 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+00:46:29.296 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+00:46:30.574 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+00:46:30.577 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+00:46:31.574 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+00:46:32.619 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+00:46:33.852 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+00:46:34.848 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+00:46:34.850 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:46:35.183 [main] INFO  PetStore_API_Automation - Database connection established.
+00:46:35.196 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'christopher.hansen'
+00:46:36.234 [main] INFO  PetStore_API_Automation - User with username : 'christopher.hansen' CREATED Successfully using API 
+00:46:36.235 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'christopher.hansen'
+00:46:36.240 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'christopher.hansen', 'Reynaldo', 'Bartell', 'juli.zulauf@hotmail.com', 'null', '745.369.4628')
+00:46:36.276 [main] INFO  PetStore_API_Automation - User with username : 'christopher.hansen' CREATED Successfully using DB 
+00:46:36.276 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'christopher.hansen'
+00:46:37.636 [main] INFO  PetStore_API_Automation - User with username : 'christopher.hansen' FOUND
+00:46:37.637 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'christopher.hansen'
+00:46:37.637 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'christopher.hansen'
+00:46:37.650 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+00:46:37.660 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:47:01.885 [main] INFO  PetStore_API_Automation - Database connection established.
+00:47:01.889 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:53:46.574 [main] INFO  PetStore_API_Automation - Database connection established.
+00:53:46.644 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'eldon.gleichner'
+00:53:48.474 [main] INFO  PetStore_API_Automation - User with username : 'eldon.gleichner' CREATED Successfully
+00:53:48.484 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'eldon.gleichner'
+00:53:49.726 [main] INFO  PetStore_API_Automation - User with username : 'eldon.gleichner' FOUND
+00:53:49.734 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Rashida' with new First Name : 'Dannie'
+00:53:51.001 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Dannie' Successfully
+00:53:51.007 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'eldon.gleichner'
+00:53:52.353 [main] INFO  PetStore_API_Automation - User with username : 'eldon.gleichner' DELETED Successfully
+00:53:52.356 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:53:52.357 [main] INFO  PetStore_API_Automation - Database connection established.
+00:53:52.541 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+00:53:53.685 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+00:53:53.689 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+00:53:54.994 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+00:53:54.998 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+00:53:56.427 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+00:53:57.552 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+00:53:58.549 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+00:54:00.012 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+00:54:00.015 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:54:01.828 [main] INFO  PetStore_API_Automation - Database connection established.
+00:54:01.841 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'shameka.heaney'
+00:54:03.113 [main] INFO  PetStore_API_Automation - User with username : 'shameka.heaney' CREATED Successfully using API 
+00:54:03.116 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'shameka.heaney'
+00:54:03.121 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'shameka.heaney', 'Beula', 'Cronin', 'kimberely.koch@gmail.com', 'null', '(714) 058-6378')
+00:54:03.166 [main] INFO  PetStore_API_Automation - User with username : 'shameka.heaney' CREATED Successfully using DB 
+00:54:03.166 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'shameka.heaney'
+00:54:04.157 [main] INFO  PetStore_API_Automation - User with username : 'shameka.heaney' FOUND
+00:54:04.158 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'shameka.heaney'
+00:54:04.158 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'shameka.heaney'
+00:54:04.173 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+00:54:04.187 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:54:04.553 [main] INFO  PetStore_API_Automation - Database connection established.
+00:54:04.556 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:58:33.339 [main] INFO  PetStore_API_Automation - Database connection established.
+00:58:33.405 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'micah.morar'
+00:58:35.102 [main] INFO  PetStore_API_Automation - User with username : 'micah.morar' CREATED Successfully
+00:58:35.104 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'micah.morar'
+00:58:36.411 [main] INFO  PetStore_API_Automation - User with username : 'micah.morar' FOUND
+00:58:36.417 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Dong' with new First Name : 'Fredda'
+00:58:37.454 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Fredda' Successfully
+00:58:37.458 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'micah.morar'
+00:58:38.785 [main] INFO  PetStore_API_Automation - User with username : 'micah.morar' DELETED Successfully
+00:58:38.789 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:58:38.790 [main] INFO  PetStore_API_Automation - Database connection established.
+00:58:38.970 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+00:58:40.179 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+00:58:40.182 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+00:58:41.510 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+00:58:41.513 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+00:58:42.516 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+00:58:43.763 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+00:58:44.888 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+00:58:46.143 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+00:58:46.145 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:58:46.608 [main] INFO  PetStore_API_Automation - Database connection established.
+00:58:46.621 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'lavern.smith'
+00:58:47.602 [main] INFO  PetStore_API_Automation - User with username : 'lavern.smith' CREATED Successfully using API 
+00:58:47.603 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'lavern.smith'
+00:58:47.607 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'lavern.smith', 'Diego', 'Gislason', 'ami.prohaska@gmail.com', 'null', '523-882-2554')
+00:58:47.645 [main] INFO  PetStore_API_Automation - User with username : 'lavern.smith' CREATED Successfully using DB 
+00:58:47.646 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'lavern.smith'
+00:58:48.637 [main] INFO  PetStore_API_Automation - User with username : 'lavern.smith' FOUND
+00:58:48.638 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'lavern.smith'
+00:58:48.638 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'lavern.smith'
+00:58:48.651 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+00:58:48.661 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:58:48.981 [main] INFO  PetStore_API_Automation - Database connection established.
+00:58:48.984 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:59:59.231 [main] INFO  PetStore_API_Automation - Database connection established.
+00:59:59.295 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'kevin.raynor'
+01:00:01.065 [main] INFO  PetStore_API_Automation - User with username : 'kevin.raynor' CREATED Successfully
+01:00:01.067 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'kevin.raynor'
+01:00:02.207 [main] INFO  PetStore_API_Automation - User with username : 'kevin.raynor' FOUND
+01:00:02.212 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Alberto' with new First Name : 'Silas'
+01:00:03.354 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Silas' Successfully
+01:00:03.356 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'kevin.raynor'
+01:00:04.468 [main] INFO  PetStore_API_Automation - User with username : 'kevin.raynor' DELETED Successfully
+01:00:04.471 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:00:04.471 [main] INFO  PetStore_API_Automation - Database connection established.
+01:00:04.648 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+01:00:05.991 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+01:00:05.998 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+01:00:07.116 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+01:00:07.120 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+01:00:08.159 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+01:00:09.369 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+01:00:10.598 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+01:00:11.724 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+01:00:11.727 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:00:12.195 [main] INFO  PetStore_API_Automation - Database connection established.
+01:00:12.208 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'stephine.jaskolski'
+01:00:13.585 [main] INFO  PetStore_API_Automation - User with username : 'stephine.jaskolski' CREATED Successfully using API 
+01:00:13.585 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'stephine.jaskolski'
+01:00:13.591 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'stephine.jaskolski', 'Dagmar', 'Lakin', 'delmer.conn@gmail.com', 'null', '450-203-8649')
+01:00:13.634 [main] INFO  PetStore_API_Automation - User with username : 'stephine.jaskolski' CREATED Successfully using DB 
+01:00:13.634 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'stephine.jaskolski'
+01:00:14.830 [main] INFO  PetStore_API_Automation - User with username : 'stephine.jaskolski' FOUND
+01:00:14.831 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'stephine.jaskolski'
+01:00:14.831 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'stephine.jaskolski'
+01:00:14.848 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+01:00:14.859 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:00:38.488 [main] INFO  PetStore_API_Automation - Database connection established.
+01:00:38.491 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:28:09.938 [main] INFO  PetStore_API_Automation - Database connection established.
+23:28:10.005 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'lawrence.gislason'
+23:28:11.712 [main] INFO  PetStore_API_Automation - User with username : 'lawrence.gislason' CREATED Successfully
+23:28:11.714 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'lawrence.gislason'
+23:28:12.868 [main] INFO  PetStore_API_Automation - User with username : 'lawrence.gislason' FOUND
+23:28:12.875 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Harland' with new First Name : 'Morgan'
+23:28:14.083 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Morgan' Successfully
+23:28:14.087 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'lawrence.gislason'
+23:28:15.142 [main] INFO  PetStore_API_Automation - User with username : 'lawrence.gislason' DELETED Successfully
+23:28:15.146 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:28:15.147 [main] INFO  PetStore_API_Automation - Database connection established.
+23:28:15.340 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+23:28:16.349 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+23:28:16.350 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+23:28:17.350 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+23:28:17.355 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+23:28:18.355 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+23:28:19.581 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+23:28:20.587 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+23:28:21.752 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+23:28:21.755 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:28:24.379 [main] INFO  PetStore_API_Automation - Database connection established.
+23:28:24.393 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'minta.gutmann'
+23:28:25.397 [main] INFO  PetStore_API_Automation - User with username : 'minta.gutmann' CREATED Successfully using API 
+23:28:25.397 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'minta.gutmann'
+23:28:25.402 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'minta.gutmann', 'Marin', 'Lemke', 'tyra.konopelski@gmail.com', 'null', '192.651.2891')
+23:28:25.457 [main] INFO  PetStore_API_Automation - User with username : 'minta.gutmann' CREATED Successfully using DB 
+23:28:25.457 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'minta.gutmann'
+23:28:26.570 [main] INFO  PetStore_API_Automation - User with username : 'minta.gutmann' FOUND
+23:28:26.571 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'minta.gutmann'
+23:28:26.571 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'minta.gutmann'
+23:28:26.591 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+23:28:26.600 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:29:22.436 [main] INFO  PetStore_API_Automation - Database connection established.
+23:29:22.440 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:29:46.875 [main] INFO  PetStore_API_Automation - Database connection established.
+23:29:46.942 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'ahmed.parker'
+23:29:48.765 [main] INFO  PetStore_API_Automation - User with username : 'ahmed.parker' CREATED Successfully
+23:29:48.767 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'ahmed.parker'
+23:29:49.813 [main] INFO  PetStore_API_Automation - User with username : 'ahmed.parker' FOUND
+23:29:49.817 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Luis' with new First Name : 'Alicia'
+23:29:51.130 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Alicia' Successfully
+23:29:51.133 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'ahmed.parker'
+23:29:52.465 [main] INFO  PetStore_API_Automation - User with username : 'ahmed.parker' DELETED Successfully
+23:29:52.469 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:29:52.470 [main] INFO  PetStore_API_Automation - Database connection established.
+23:29:52.657 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+23:29:53.809 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+23:29:53.813 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+23:29:54.802 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+23:29:54.805 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+23:29:55.822 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+23:29:56.933 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+23:29:58.014 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+23:29:59.077 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+23:29:59.081 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:29:59.637 [main] INFO  PetStore_API_Automation - Database connection established.
+23:29:59.650 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'vincenza.weimann'
+23:30:00.674 [main] INFO  PetStore_API_Automation - User with username : 'vincenza.weimann' CREATED Successfully using API 
+23:30:00.675 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'vincenza.weimann'
+23:30:00.680 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'vincenza.weimann', 'Charline', 'Senger', 'jacquie.wyman@gmail.com', 'null', '(564) 038-3488')
+23:30:00.740 [main] INFO  PetStore_API_Automation - User with username : 'vincenza.weimann' CREATED Successfully using DB 
+23:30:00.740 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'vincenza.weimann'
+23:30:01.828 [main] INFO  PetStore_API_Automation - User with username : 'vincenza.weimann' FOUND
+23:30:01.829 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'vincenza.weimann'
+23:30:01.829 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'vincenza.weimann'
+23:30:01.852 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+23:30:01.862 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:30:02.389 [main] INFO  PetStore_API_Automation - Database connection established.
+23:30:02.391 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:42:39.439 [main] INFO  PetStore_API_Automation - Database connection established.
+23:42:39.506 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'sam.stiedemann'
+23:42:41.257 [main] INFO  PetStore_API_Automation - User with username : 'sam.stiedemann' CREATED Successfully
+23:42:41.259 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'sam.stiedemann'
+23:42:42.401 [main] INFO  PetStore_API_Automation - User with username : 'sam.stiedemann' FOUND
+23:42:42.405 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Sade' with new First Name : 'Francisca'
+23:42:43.547 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Francisca' Successfully
+23:42:43.552 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'sam.stiedemann'
+23:42:44.781 [main] INFO  PetStore_API_Automation - User with username : 'sam.stiedemann' DELETED Successfully
+23:42:44.784 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:42:44.785 [main] INFO  PetStore_API_Automation - Database connection established.
+23:42:44.967 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+23:42:46.127 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+23:42:46.130 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+23:42:47.350 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+23:42:47.354 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+23:42:48.551 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+23:42:49.984 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+23:42:51.328 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+23:42:52.565 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+23:42:52.568 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:42:53.057 [main] INFO  PetStore_API_Automation - Database connection established.
+23:42:53.071 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'eveline.daniel'
+23:42:54.284 [main] INFO  PetStore_API_Automation - User with username : 'eveline.daniel' CREATED Successfully using API 
+23:42:54.285 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'eveline.daniel'
+23:42:54.290 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (283430552, 'eveline.daniel', 'Judson', 'Kuhn', 'santiago.mcclure@yahoo.com', 'null', '052.807.7376')
+23:42:54.310 [main] INFO  PetStore_API_Automation - User with username : 'eveline.daniel' CREATED Successfully using DB 
+23:42:54.311 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'eveline.daniel'
+23:42:55.304 [main] INFO  PetStore_API_Automation - User with username : 'eveline.daniel' FOUND
+23:42:55.304 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'eveline.daniel'
+23:42:55.305 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'eveline.daniel'
+23:42:55.315 [main] INFO  PetStore_API_Automation - 283430552 is Matching with DB and API Response
+23:42:55.323 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:43:14.683 [main] INFO  PetStore_API_Automation - Database connection established.
+23:43:14.685 [main] INFO  PetStore_API_Automation - Database connection closed.
+11:31:18.526 [main] INFO  PetStore_API_Automation - Database connection established.
+11:31:18.590 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'priscila.crist'
+11:31:20.098 [main] INFO  PetStore_API_Automation - User with username : 'priscila.crist' CREATED Successfully
+11:31:20.100 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'priscila.crist'
+11:31:21.183 [main] INFO  PetStore_API_Automation - User with username : 'priscila.crist' FOUND
+11:31:21.190 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Yong' with new First Name : 'Marlin'
+11:31:22.226 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Marlin' Successfully
+11:31:22.230 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'priscila.crist'
+11:31:23.537 [main] INFO  PetStore_API_Automation - User with username : 'priscila.crist' DELETED Successfully
+11:31:23.540 [main] INFO  PetStore_API_Automation - Database connection closed.
+11:31:23.541 [main] INFO  PetStore_API_Automation - Database connection established.
+11:31:23.708 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+11:31:25.028 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+11:31:25.032 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+11:31:26.094 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+11:31:26.096 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+11:31:27.298 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+11:31:28.392 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+11:31:29.525 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+11:31:30.817 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+11:31:30.821 [main] INFO  PetStore_API_Automation - Database connection closed.
+11:31:31.341 [main] INFO  PetStore_API_Automation - Database connection established.
+11:31:31.353 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'vincent.raynor'
+11:31:32.538 [main] INFO  PetStore_API_Automation - User with username : 'vincent.raynor' CREATED Successfully using API 
+11:31:32.539 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'vincent.raynor'
+11:31:32.544 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (283430552, 'vincent.raynor', 'Altha', 'Gibson', 'theresa.bins@hotmail.com', 'null', '1-631-925-1130')
+11:31:32.604 [main] INFO  PetStore_API_Automation - User with username : 'vincent.raynor' CREATED Successfully using DB 
+11:31:32.604 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'vincent.raynor'
+11:31:33.902 [main] INFO  PetStore_API_Automation - User with username : 'vincent.raynor' FOUND
+11:31:33.903 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'vincent.raynor'
+11:31:33.903 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'vincent.raynor'
+11:31:33.923 [main] INFO  PetStore_API_Automation - 283430552 is Matching with DB and API Response
+11:31:33.939 [main] INFO  PetStore_API_Automation - Database connection closed.
+11:31:34.533 [main] INFO  PetStore_API_Automation - Database connection established.
+11:31:34.537 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:08:01.915 [main] INFO  PetStore_API_Automation - Database connection established.
+23:08:01.981 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'myrna.botsford'
+23:08:03.889 [main] INFO  PetStore_API_Automation - User with username : 'myrna.botsford' CREATED Successfully
+23:08:03.891 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'myrna.botsford'
+23:08:05.508 [main] INFO  PetStore_API_Automation - User with username : 'myrna.botsford' FOUND
+23:08:05.512 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Minna' with new First Name : 'Reena'
+23:08:06.803 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Reena' Successfully
+23:08:06.807 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'myrna.botsford'
+23:08:07.900 [main] INFO  PetStore_API_Automation - User with username : 'myrna.botsford' DELETED Successfully
+23:08:07.903 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:08:07.904 [main] INFO  PetStore_API_Automation - Database connection established.
+23:08:08.117 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+23:08:09.165 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+23:08:09.167 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+23:08:10.166 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+23:08:10.169 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+23:08:11.308 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+23:08:13.867 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+23:08:15.585 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+23:08:16.923 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+23:08:16.926 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:08:18.845 [main] INFO  PetStore_API_Automation - Database connection established.
+23:08:18.858 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'beverlee.gleason'
+23:08:20.592 [main] INFO  PetStore_API_Automation - User with username : 'beverlee.gleason' CREATED Successfully using API 
+23:08:20.593 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'beverlee.gleason'
+23:08:20.601 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'beverlee.gleason', 'Bryon', 'Hermann', 'paige.funk@gmail.com', 'null', '296.692.6416')
+23:08:20.671 [main] INFO  PetStore_API_Automation - User with username : 'beverlee.gleason' CREATED Successfully using DB 
+23:08:20.671 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'beverlee.gleason'
+23:08:21.894 [main] INFO  PetStore_API_Automation - User with username : 'beverlee.gleason' FOUND
+23:08:21.894 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'beverlee.gleason'
+23:08:21.895 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'beverlee.gleason'
+23:08:21.914 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+23:08:21.930 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:08:22.419 [main] INFO  PetStore_API_Automation - Database connection established.
+23:08:22.420 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:09:47.493 [main] INFO  PetStore_API_Automation - Database connection established.
+22:09:47.564 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'rasheeda.bradtke'
+22:09:49.401 [main] INFO  PetStore_API_Automation - User with username : 'rasheeda.bradtke' CREATED Successfully
+22:09:49.403 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'rasheeda.bradtke'
+22:09:50.632 [main] INFO  PetStore_API_Automation - User with username : 'rasheeda.bradtke' FOUND
+22:09:50.636 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Kathline' with new First Name : 'Eunice'
+22:09:51.746 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Eunice' Successfully
+22:09:51.751 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'rasheeda.bradtke'
+22:09:52.801 [main] INFO  PetStore_API_Automation - User with username : 'rasheeda.bradtke' DELETED Successfully
+22:09:52.804 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:09:52.805 [main] INFO  PetStore_API_Automation - Database connection established.
+22:09:52.989 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+22:09:55.224 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+22:09:55.228 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+22:09:56.481 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+22:09:56.485 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+22:09:58.794 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+22:10:00.908 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+22:10:03.512 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+22:10:06.005 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+22:10:06.009 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:10:07.738 [main] INFO  PetStore_API_Automation - Database connection established.
+22:10:07.750 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'tyra.carter'
+22:10:10.329 [main] INFO  PetStore_API_Automation - User with username : 'tyra.carter' CREATED Successfully using API 
+22:10:10.330 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'tyra.carter'
+22:10:10.335 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'tyra.carter', 'Kera', 'Kutch', 'frances.hauck@hotmail.com', 'null', '(455) 534-9324')
+22:10:10.399 [main] INFO  PetStore_API_Automation - User with username : 'tyra.carter' CREATED Successfully using DB 
+22:10:10.399 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'tyra.carter'
+22:10:12.836 [main] INFO  PetStore_API_Automation - User with username : 'tyra.carter' FOUND
+22:10:12.836 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'tyra.carter'
+22:10:12.837 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'tyra.carter'
+22:10:12.857 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+22:10:12.872 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:10:13.347 [main] INFO  PetStore_API_Automation - Database connection established.
+22:10:13.349 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:21:58.867 [main] INFO  PetStore_API_Automation - Database connection established.
+22:21:58.933 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'sung.bartoletti'
+22:22:00.463 [main] INFO  PetStore_API_Automation - User with username : 'sung.bartoletti' CREATED Successfully
+22:22:00.466 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'sung.bartoletti'
+22:22:01.553 [main] INFO  PetStore_API_Automation - User with username : 'sung.bartoletti' FOUND
+22:22:01.559 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Dotty' with new First Name : 'Fabian'
+22:22:02.602 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Fabian' Successfully
+22:22:02.607 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'sung.bartoletti'
+22:22:03.645 [main] INFO  PetStore_API_Automation - User with username : 'sung.bartoletti' DELETED Successfully
+22:22:03.648 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:22:03.650 [main] INFO  PetStore_API_Automation - Database connection established.
+22:22:03.840 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+22:22:05.472 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+22:22:05.476 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+22:22:07.548 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+22:22:07.551 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+22:22:10.385 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+22:22:12.459 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+22:22:13.841 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+22:22:16.674 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+22:22:16.677 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:22:17.147 [main] INFO  PetStore_API_Automation - Database connection established.
+22:22:17.161 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'lynelle.connelly'
+22:22:18.559 [main] INFO  PetStore_API_Automation - User with username : 'lynelle.connelly' CREATED Successfully using API 
+22:22:18.560 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'lynelle.connelly'
+22:22:18.567 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (283430552, 'lynelle.connelly', 'Tawanna', 'Howe', 'joannie.schuppe@gmail.com', 'null', '519.047.9281')
+22:22:18.612 [main] INFO  PetStore_API_Automation - User with username : 'lynelle.connelly' CREATED Successfully using DB 
+22:22:18.612 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'lynelle.connelly'
+22:22:20.658 [main] INFO  PetStore_API_Automation - User with username : 'lynelle.connelly' FOUND
+22:22:20.659 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'lynelle.connelly'
+22:22:20.659 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'lynelle.connelly'
+22:22:20.673 [main] INFO  PetStore_API_Automation - 283430552 is Matching with DB and API Response
+22:22:20.685 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:22:21.200 [main] INFO  PetStore_API_Automation - Database connection established.
+22:22:21.201 [main] INFO  PetStore_API_Automation - Database connection closed.
+21:59:30.886 [main] INFO  PetStore_API_Automation - Database connection established.
+21:59:30.949 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'mariano.rau'
+21:59:32.485 [main] INFO  PetStore_API_Automation - User with username : 'mariano.rau' CREATED Successfully
+21:59:32.487 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'mariano.rau'
+21:59:33.560 [main] INFO  PetStore_API_Automation - User with username : 'mariano.rau' FOUND
+21:59:33.565 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Kayce' with new First Name : 'Demarcus'
+21:59:34.591 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Demarcus' Successfully
+21:59:34.595 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'mariano.rau'
+21:59:35.618 [main] INFO  PetStore_API_Automation - User with username : 'mariano.rau' DELETED Successfully
+21:59:35.621 [main] INFO  PetStore_API_Automation - Database connection closed.
+21:59:35.622 [main] INFO  PetStore_API_Automation - Database connection established.
+21:59:35.806 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+21:59:36.813 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+21:59:36.816 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+21:59:37.833 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+21:59:37.836 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+21:59:39.077 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+21:59:40.110 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+21:59:41.133 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+21:59:42.147 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+21:59:42.150 [main] INFO  PetStore_API_Automation - Database connection closed.
+21:59:42.642 [main] INFO  PetStore_API_Automation - Database connection established.
+21:59:42.655 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'nelia.gutmann'
+21:59:43.654 [main] INFO  PetStore_API_Automation - User with username : 'nelia.gutmann' CREATED Successfully using API 
+21:59:43.655 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'nelia.gutmann'
+21:59:43.659 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (273050709, 'nelia.gutmann', 'Mao', 'O'Connell', 'giovanna.breitenberg@yahoo.com', 'null', '(573) 028-2133')
+21:59:43.700 [main] INFO  PetStore_API_Automation - User with username : 'nelia.gutmann' CREATED Successfully using DB 
+21:59:43.700 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'nelia.gutmann'
+21:59:44.732 [main] INFO  PetStore_API_Automation - User with username : 'nelia.gutmann' FOUND
+21:59:44.733 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'nelia.gutmann'
+21:59:44.733 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'nelia.gutmann'
+21:59:44.745 [main] INFO  PetStore_API_Automation - 273050709 is Matching with DB and API Response
+21:59:44.754 [main] INFO  PetStore_API_Automation - Database connection closed.
+21:59:45.263 [main] INFO  PetStore_API_Automation - Database connection established.
+21:59:45.264 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:01:14.792 [main] INFO  PetStore_API_Automation - Database connection established.
+22:01:14.859 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'erinn.luettgen'
+22:01:16.310 [main] INFO  PetStore_API_Automation - User with username : 'erinn.luettgen' CREATED Successfully using API 
+22:01:16.310 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'erinn.luettgen'
+22:01:16.314 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (50345623, 'erinn.luettgen', 'Chieko', 'Blanda', 'eddie.veum@yahoo.com', 'null', '447.370.4781')
+22:01:16.324 [main] INFO  PetStore_API_Automation - User with username : 'erinn.luettgen' CREATED Successfully using DB 
+22:01:16.325 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'erinn.luettgen'
+22:01:17.375 [main] INFO  PetStore_API_Automation - User with username : 'erinn.luettgen' FOUND
+22:01:17.375 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'erinn.luettgen'
+22:01:17.376 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'erinn.luettgen'
+22:01:17.383 [main] INFO  PetStore_API_Automation - 50345623 is Matching with DB and API Response
+22:01:17.391 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:11:33.023 [main] INFO  PetStore_API_Automation - Database connection established.
+22:11:33.095 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'herman.schowalter'
+22:11:35.203 [main] INFO  PetStore_API_Automation - User with username : 'herman.schowalter' CREATED Successfully
+22:11:35.205 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'herman.schowalter'
+22:11:36.589 [main] INFO  PetStore_API_Automation - User with username : 'herman.schowalter' FOUND
+22:11:36.593 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Desmond' with new First Name : 'Mckinley'
+22:11:37.792 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Mckinley' Successfully
+22:11:37.796 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'herman.schowalter'
+22:11:39.003 [main] INFO  PetStore_API_Automation - User with username : 'herman.schowalter' DELETED Successfully
+22:11:39.006 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:11:39.007 [main] INFO  PetStore_API_Automation - Database connection established.
+22:11:39.195 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+22:11:40.347 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+22:11:40.350 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+22:11:41.809 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+22:11:41.812 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+22:11:43.242 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+22:11:44.778 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+22:11:46.212 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+22:11:47.646 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+22:11:47.649 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:11:50.126 [main] INFO  PetStore_API_Automation - Database connection established.
+22:11:50.140 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'noe.schumm'
+22:11:51.538 [main] INFO  PetStore_API_Automation - User with username : 'noe.schumm' CREATED Successfully using API 
+22:11:51.539 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'noe.schumm'
+22:11:51.550 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (1999690240, 'noe.schumm', 'Jarvis', 'Runolfsdottir', 'chaya.hamill@gmail.com', 'null', '511-914-8523')
+22:11:51.564 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:11:52.058 [main] INFO  PetStore_API_Automation - Database connection established.
+22:11:52.060 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:12:43.886 [main] INFO  PetStore_API_Automation - Database connection established.
+22:12:43.950 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'jacklyn.wolff'
+22:12:45.789 [main] INFO  PetStore_API_Automation - User with username : 'jacklyn.wolff' CREATED Successfully
+22:12:45.791 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'jacklyn.wolff'
+22:12:47.071 [main] INFO  PetStore_API_Automation - User with username : 'jacklyn.wolff' FOUND
+22:12:47.078 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Lashawnda' with new First Name : 'Esta'
+22:12:48.398 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Esta' Successfully
+22:12:48.401 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'jacklyn.wolff'
+22:12:49.727 [main] INFO  PetStore_API_Automation - User with username : 'jacklyn.wolff' DELETED Successfully
+22:12:49.728 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:12:49.729 [main] INFO  PetStore_API_Automation - Database connection established.
+22:12:49.922 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+22:12:51.154 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+22:12:51.158 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+22:12:52.465 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+22:12:52.468 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+22:12:53.899 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+22:12:55.230 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+22:12:56.561 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+22:12:58.024 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+22:12:58.027 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:12:58.443 [main] INFO  PetStore_API_Automation - Database connection established.
+22:12:58.456 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'ngoc.bayer'
+22:12:59.734 [main] INFO  PetStore_API_Automation - User with username : 'ngoc.bayer' CREATED Successfully using API 
+22:12:59.735 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'ngoc.bayer'
+22:12:59.740 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (273050709, 'ngoc.bayer', 'Mireille', 'Klein', 'kaitlyn.rutherford@gmail.com', 'null', '219-499-1255')
+22:12:59.760 [main] INFO  PetStore_API_Automation - User with username : 'ngoc.bayer' CREATED Successfully using DB 
+22:12:59.761 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'ngoc.bayer'
+22:13:01.188 [main] INFO  PetStore_API_Automation - User with username : 'ngoc.bayer' FOUND
+22:13:01.188 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'ngoc.bayer'
+22:13:01.189 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'ngoc.bayer'
+22:13:01.202 [main] INFO  PetStore_API_Automation - 273050709 is Matching with DB and API Response
+22:13:01.215 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:13:01.686 [main] INFO  PetStore_API_Automation - Database connection established.
+22:13:01.687 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:13:54.187 [main] INFO  PetStore_API_Automation - Database connection established.
+22:13:54.248 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'raymonde.bergnaum'
+22:13:56.041 [main] INFO  PetStore_API_Automation - User with username : 'raymonde.bergnaum' CREATED Successfully
+22:13:56.043 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'raymonde.bergnaum'
+22:13:57.389 [main] INFO  PetStore_API_Automation - User with username : 'raymonde.bergnaum' FOUND
+22:13:57.394 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Nikita' with new First Name : 'Cyril'
+22:14:01.998 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Cyril' Successfully
+22:14:02.004 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'raymonde.bergnaum'
+22:14:03.537 [main] INFO  PetStore_API_Automation - User with username : 'raymonde.bergnaum' DELETED Successfully
+22:14:03.541 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:14:03.542 [main] INFO  PetStore_API_Automation - Database connection established.
+22:14:03.726 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+22:14:05.067 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+22:14:05.071 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+22:14:06.296 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+22:14:06.299 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+22:14:07.628 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+22:14:08.806 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+22:14:09.983 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+22:14:11.228 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+22:14:11.230 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:14:11.626 [main] INFO  PetStore_API_Automation - Database connection established.
+22:14:11.639 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'denese.greenfelder'
+22:14:18.275 [main] INFO  PetStore_API_Automation - User with username : 'denese.greenfelder' CREATED Successfully using API 
+22:14:18.275 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'denese.greenfelder'
+22:14:18.282 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (1823741948, 'denese.greenfelder', 'Roland', 'Quigley', 'alexis.rice@gmail.com', 'null', '(257) 274-1578')
+22:14:18.293 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:14:18.713 [main] INFO  PetStore_API_Automation - Database connection established.
+22:14:18.715 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:14:42.758 [main] INFO  PetStore_API_Automation - Database connection established.
+22:14:42.821 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'simon.hahn'
+22:14:44.326 [main] INFO  PetStore_API_Automation - User with username : 'simon.hahn' CREATED Successfully
+22:14:44.338 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'simon.hahn'
+22:14:45.355 [main] INFO  PetStore_API_Automation - User with username : 'simon.hahn' FOUND
+22:14:45.359 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Letha' with new First Name : 'Alden'
+22:14:46.383 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Alden' Successfully
+22:14:46.387 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'simon.hahn'
+22:14:47.407 [main] INFO  PetStore_API_Automation - User with username : 'simon.hahn' DELETED Successfully
+22:14:47.410 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:14:47.411 [main] INFO  PetStore_API_Automation - Database connection established.
+22:14:47.593 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+22:14:48.595 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+22:14:48.599 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+22:14:49.616 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+22:14:49.619 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+22:14:50.627 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+22:14:51.664 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+22:14:52.675 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+22:14:53.694 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+22:14:53.696 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:14:54.114 [main] INFO  PetStore_API_Automation - Database connection established.
+22:14:54.128 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'clinton.quigley'
+22:14:55.129 [main] INFO  PetStore_API_Automation - User with username : 'clinton.quigley' CREATED Successfully using API 
+22:14:55.130 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'clinton.quigley'
+22:14:55.135 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'clinton.quigley', 'Lourdes', 'Kilback', 'delana.dickens@hotmail.com', 'null', '1-221-739-6651')
+22:14:55.154 [main] INFO  PetStore_API_Automation - User with username : 'clinton.quigley' CREATED Successfully using DB 
+22:14:55.154 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'clinton.quigley'
+22:14:56.168 [main] INFO  PetStore_API_Automation - User with username : 'clinton.quigley' FOUND
+22:14:56.168 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'clinton.quigley'
+22:14:56.168 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'clinton.quigley'
+22:14:56.181 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+22:14:56.194 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:14:56.627 [main] INFO  PetStore_API_Automation - Database connection established.
+22:14:56.628 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:12:31.339 [main] INFO  PetStore_API_Automation - Database connection established.
+01:12:31.404 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'rosario.lubowitz'
+01:12:32.919 [main] INFO  PetStore_API_Automation - User with username : 'rosario.lubowitz' CREATED Successfully
+01:12:32.922 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'rosario.lubowitz'
+01:12:33.945 [main] INFO  PetStore_API_Automation - User with username : 'rosario.lubowitz' FOUND
+01:12:33.949 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Hermila' with new First Name : 'Jeffie'
+01:12:34.969 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Jeffie' Successfully
+01:12:34.975 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'rosario.lubowitz'
+01:12:35.997 [main] INFO  PetStore_API_Automation - User with username : 'rosario.lubowitz' DELETED Successfully
+01:12:36.000 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:12:36.001 [main] INFO  PetStore_API_Automation - Database connection established.
+01:12:36.188 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+01:12:37.194 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+01:12:37.199 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+01:12:38.215 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+01:12:38.218 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+01:12:39.234 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+01:12:40.270 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+01:12:41.286 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+01:12:42.302 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+01:12:42.305 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:12:42.738 [main] INFO  PetStore_API_Automation - Database connection established.
+01:12:42.752 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'alayna.dibbert'
+01:12:43.754 [main] INFO  PetStore_API_Automation - User with username : 'alayna.dibbert' CREATED Successfully using API 
+01:12:43.755 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'alayna.dibbert'
+01:12:43.759 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (391491302, 'alayna.dibbert', 'Jonas', 'Batz', 'mitchel.ankunding@gmail.com', 'null', '(883) 656-4587')
+01:12:43.786 [main] INFO  PetStore_API_Automation - User with username : 'alayna.dibbert' CREATED Successfully using DB 
+01:12:43.786 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'alayna.dibbert'
+01:12:44.798 [main] INFO  PetStore_API_Automation - User with username : 'alayna.dibbert' FOUND
+01:12:44.798 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'alayna.dibbert'
+01:12:44.799 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'alayna.dibbert'
+01:12:44.813 [main] INFO  PetStore_API_Automation - 391491302 is Matching with DB and API Response
+01:12:44.829 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:12:44.952 [main] INFO  PetStore_API_Automation - Database connection established.
+01:12:44.975 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:13:30.146 [main] INFO  PetStore_API_Automation - Database connection established.
+01:14:16.366 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:18:32.836 [main] INFO  PetStore_API_Automation - Database connection established.
+01:18:32.902 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:18:43.976 [main] INFO  PetStore_API_Automation - Database connection established.
+01:18:44.039 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'cornell.gleason'
+01:18:45.583 [main] INFO  PetStore_API_Automation - User with username : 'cornell.gleason' CREATED Successfully
+01:18:45.585 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'cornell.gleason'
+01:18:46.604 [main] INFO  PetStore_API_Automation - User with username : 'cornell.gleason' FOUND
+01:18:46.608 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Hong' with new First Name : 'Nicholas'
+01:18:47.627 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Nicholas' Successfully
+01:18:47.630 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'cornell.gleason'
+01:18:48.652 [main] INFO  PetStore_API_Automation - User with username : 'cornell.gleason' DELETED Successfully
+01:18:48.655 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:18:48.656 [main] INFO  PetStore_API_Automation - Database connection established.
+01:18:48.837 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+01:18:49.856 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+01:18:49.859 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+01:18:50.874 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+01:18:50.877 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+01:18:51.888 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+01:18:52.928 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+01:18:53.954 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+01:18:54.971 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+01:18:54.973 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:18:55.389 [main] INFO  PetStore_API_Automation - Database connection established.
+01:18:55.402 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'marya.parker'
+01:18:56.405 [main] INFO  PetStore_API_Automation - User with username : 'marya.parker' CREATED Successfully using API 
+01:18:56.406 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'marya.parker'
+01:18:56.411 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (611621587, 'marya.parker', 'Valarie', 'Leannon', 'tomika.rodriguez@yahoo.com', 'null', '302-709-0573')
+01:18:56.456 [main] INFO  PetStore_API_Automation - User with username : 'marya.parker' CREATED Successfully using DB 
+01:18:56.456 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'marya.parker'
+01:18:57.462 [main] INFO  PetStore_API_Automation - User with username : 'marya.parker' FOUND
+01:18:57.462 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'marya.parker'
+01:18:57.463 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'marya.parker'
+01:18:57.474 [main] INFO  PetStore_API_Automation - 611621587 is Matching with DB and API Response
+01:18:57.484 [main] INFO  PetStore_API_Automation - Database connection closed.
+01:18:57.616 [main] INFO  PetStore_API_Automation - Database connection established.
+01:18:57.657 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:01:20.236 [main] INFO  PetStore_API_Automation - Database connection established.
+23:01:20.295 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'gregorio.bayer'
+23:01:22.341 [main] INFO  PetStore_API_Automation - User with username : 'gregorio.bayer' CREATED Successfully
+23:01:22.343 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'gregorio.bayer'
+23:01:23.900 [main] INFO  PetStore_API_Automation - User with username : 'gregorio.bayer' FOUND
+23:01:23.902 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Hilario' with new First Name : 'Hildegard'
+23:01:25.557 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Hildegard' Successfully
+23:01:25.560 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'gregorio.bayer'
+23:01:27.088 [main] INFO  PetStore_API_Automation - User with username : 'gregorio.bayer' DELETED Successfully
+23:01:27.090 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:01:27.090 [main] INFO  PetStore_API_Automation - Database connection established.
+23:01:27.248 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+23:01:28.831 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+23:01:28.835 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+23:01:30.367 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+23:01:30.370 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+23:01:31.851 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+23:01:33.333 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+23:01:34.780 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+23:01:36.375 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+23:01:36.378 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:01:36.817 [main] INFO  PetStore_API_Automation - Database connection established.
+23:01:36.830 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'arthur.kirlin'
+23:01:38.352 [main] INFO  PetStore_API_Automation - User with username : 'arthur.kirlin' CREATED Successfully using API 
+23:01:38.353 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'arthur.kirlin'
+23:01:38.358 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (391491302, 'arthur.kirlin', 'Abdul', 'Schoen', 'dorinda.kemmer@gmail.com', 'null', '776.374.0142')
+23:01:38.417 [main] INFO  PetStore_API_Automation - User with username : 'arthur.kirlin' CREATED Successfully using DB 
+23:01:38.418 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'arthur.kirlin'
+23:01:39.967 [main] INFO  PetStore_API_Automation - User with username : 'arthur.kirlin' FOUND
+23:01:39.967 [main] INFO  PetStore_API_Automation - Fetching user in DB with username : 'arthur.kirlin'
+23:01:39.968 [main] INFO  PetStore_API_Automation - Query used : SELECT * from users where Username = 'arthur.kirlin'
+23:01:39.980 [main] INFO  PetStore_API_Automation - 391491302 is Matching with DB and API Response
+23:01:39.991 [main] INFO  PetStore_API_Automation - Database connection closed.
+23:01:40.120 [main] INFO  PetStore_API_Automation - Database connection established.
+23:01:40.164 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:52:42.364 [main] INFO  PetStore_API_Automation - Database connection established.
+22:52:42.451 [main] INFO  PetStore_API_Automation - Database connection closed.
+22:53:47.452 [main] INFO  PetStore_API_Automation - Database connection established.
+22:54:17.491 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:27:51.112 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'kum.murazik'
+00:27:53.298 [main] INFO  PetStore_API_Automation - User with username : 'kum.murazik' CREATED Successfully
+00:27:53.301 [main] INFO  PetStore_API_Automation - Starting Test to Fetch User with username : 'kum.murazik'
+00:27:54.794 [main] INFO  PetStore_API_Automation - User with username : 'kum.murazik' FOUND
+00:27:54.801 [main] INFO  PetStore_API_Automation - Starting Test to Update User's FirstName 'Josefa' with new First Name : 'Buck'
+00:27:56.280 [main] INFO  PetStore_API_Automation - User Updated with new firstname : 'Buck' Successfully
+00:27:56.283 [main] INFO  PetStore_API_Automation - Starting Test to DELETE User with username : 'kum.murazik'
+00:27:57.811 [main] INFO  PetStore_API_Automation - User with username : 'kum.murazik' DELETED Successfully
+00:27:58.033 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'donald.trump'
+00:27:59.555 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : donald.trump
+00:27:59.560 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'joe.biden'
+00:28:01.083 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : joe.biden
+00:28:01.086 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'narendra.modi'
+00:28:02.612 [main] INFO  PetStore_API_Automation - Successfully Created user with Username : narendra.modi
+00:28:04.150 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : donald.trump
+00:28:05.656 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : joe.biden
+00:28:07.096 [main] INFO  PetStore_API_Automation - Successfully Deleted user with Username : narendra.modi
+00:28:08.898 [main] INFO  PetStore_API_Automation - Database connection established.
+00:28:08.925 [main] INFO  PetStore_API_Automation - Starting Test to Create User with username : 'lauren.hackett'
+00:28:10.445 [main] INFO  PetStore_API_Automation - User with username : 'lauren.hackett' CREATED Successfully using API 
+00:28:10.446 [main] INFO  PetStore_API_Automation - Creating user in DB with username : 'lauren.hackett'
+00:28:10.452 [main] INFO  PetStore_API_Automation - Query used : INSERT INTO users (UserId, Username, FirstName, LastName, Email, Password, Phone) VALUES (305989654, 'lauren.hackett', 'Truman', 'Prohaska', 'prince.west@yahoo.com', 'null', '1-839-743-4125')
+00:28:10.466 [main] INFO  PetStore_API_Automation - Database connection closed.
+00:28:10.692 [main] INFO  PetStore_API_Automation - Database connection established.
+00:28:40.707 [main] INFO  PetStore_API_Automation - Database connection closed.

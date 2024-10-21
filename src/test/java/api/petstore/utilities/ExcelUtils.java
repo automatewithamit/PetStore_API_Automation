@@ -109,4 +109,63 @@ public class ExcelUtils {
 
         return data.toArray(new Object[0][0]);
     }
+
+    public static String getUsernameByUserId(String fileName, String sheetName, String userIdColumnName, String userNameColumnName, int userId) {
+        ExtentReportManager.getTest().log(Status.INFO, "Starting test with File: " + fileName + ", " + sheetName + ", UserId: " + userId);
+        String username = null;
+
+        try (FileInputStream file = new FileInputStream(fileName);
+             XSSFWorkbook workbook = new XSSFWorkbook(file)) {
+
+            Sheet sheet = workbook.getSheet(sheetName);
+            if (sheet == null) {
+                throw new IllegalArgumentException("Sheet " + sheetName + " does not exist in " + fileName);
+            }
+
+            DataFormatter formatter = new DataFormatter();
+            int userIdColumnIndex = -1;
+            int userNameColumnIndex = -1;
+            Row headerRow = sheet.getRow(0);
+
+            // Find the column index for UserId and UserName based on column names
+            for (int i = 0; i < headerRow.getLastCellNum(); i++) {
+                String columnName = formatter.formatCellValue(headerRow.getCell(i));
+                if (columnName.equalsIgnoreCase(userIdColumnName)) {
+                    userIdColumnIndex = i;
+                } else if (columnName.equalsIgnoreCase(userNameColumnName)) {
+                    userNameColumnIndex = i;
+                }
+            }
+
+            if (userIdColumnIndex == -1) {
+                throw new IllegalArgumentException("Column " + userIdColumnName + " does not exist in sheet " + sheetName);
+            }
+
+            if (userNameColumnIndex == -1) {
+                throw new IllegalArgumentException("Column " + userNameColumnName + " does not exist in sheet " + sheetName);
+            }
+
+            // Iterate over the rows and find the username for the given UserId
+            for (int i = 1; i <= sheet.getLastRowNum(); i++) {
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    String cellValue = formatter.formatCellValue(row.getCell(userIdColumnIndex));
+                    if (Integer.parseInt(cellValue) == userId) {
+                        username = formatter.formatCellValue(row.getCell(userNameColumnIndex));
+                        break;
+                    }
+                }
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        if (username == null) {
+            throw new IllegalArgumentException("UserId " + userId + " does not exist in sheet " + sheetName);
+        }
+
+        return username;
+    }
+
 }

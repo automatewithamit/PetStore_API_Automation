@@ -1,6 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="API Test Suite" parallel="false">
     <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
         <listener class-name="api.petstore.utilities.TestListener" />
     </listeners>
     <test name="API Tests">
@@ -9,7 +10,6 @@
             <class name="api.petstore.testcases.UserDataDrivenTests"/>
             <class name="api.petstore.testcases.SQLDatabaseTests"/>
             <class name="api.petstore.testcases.MongoDatabaseTests"/>
-            <!-- Add other test classes here -->
         </classes>
     </test>
 </suite>

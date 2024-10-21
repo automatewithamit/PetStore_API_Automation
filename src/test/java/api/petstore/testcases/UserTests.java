@@ -5,6 +5,8 @@ import api.petstore.payloads.User;
 import api.petstore.reporting.ExtentReportManager;
 import com.aventstack.extentreports.Status;
 import com.github.javafaker.Faker;
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import lombok.extern.java.Log;
 import org.testng.Assert;
@@ -16,6 +18,7 @@ public class UserTests extends  BaseTest{
     User user;
 
     @BeforeClass
+    @Step("User Data Getting Generated..")
     public void generateUserData(){
         faker = new Faker();
         user = new User();
@@ -29,7 +32,7 @@ public class UserTests extends  BaseTest{
 
     }
 
-
+    @Description("This test verifies that User is getting created into the system")
     @Test(priority = 1)
     public void createUserTest(){
 
@@ -41,7 +44,7 @@ public class UserTests extends  BaseTest{
     ExtentReportManager.getTest().log(Status.INFO, "User with username : '"+ user.getUsername() + "' CREATED Successfully");
     Logger.info("User with username : '"+ user.getUsername() + "' CREATED Successfully");
     }
-
+    @Description("This test verifies that User is Fetched using API Get Call")
     @Test(priority = 2)
     public void getUserTest(){
         String userNameToFind = this.user.getUsername();
@@ -55,6 +58,7 @@ public class UserTests extends  BaseTest{
         Logger.info("User with username : '"+ user.getUsername() + "' FOUND");
     }
     @Test(priority = 3)
+    @Description("This test verifies that User is being able to be updated using PATCH api call")
     public void updateUserTest(){
         String newFirstName = faker.name().firstName();
         ExtentReportManager.getTest().log(Status.INFO, "Starting Test to Update User's FirstName '"+user.getFirstName()+"' with new First Name : '"+ newFirstName + "'");
@@ -69,6 +73,7 @@ public class UserTests extends  BaseTest{
         Logger.info("User Updated with new firstname : '"+ newFirstName + "' Successfully");
     }
     @Test(priority = 4)
+    @Description("This test verifies that User is being able to be Deleted by Delete API Call")
     public void deleteUserTest(){
         ExtentReportManager.getTest().log(Status.INFO, "Starting Test to DELETE User with username : '"+ user.getUsername() + "'");
         Logger.info("Starting Test to DELETE User with username : '"+ user.getUsername() + "'");

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "54323",
+    "username": "joe.biden",
+    "firstName": "Joe",
+    "lastName": "Biden",
+    "email": "joe.biden@gmail.com",
+    "password": "test@123",
+    "phone": "123456789"
+  },
+  {
+    "id": "76543",
+    "username": "narendra.modi",
+    "firstName": "Narendra",
+    "lastName": "Modi",
+    "email": "narendra.modi@gmail.com",
+    "password": "test@123",
+    "phone": "123456789"
+  }
+]
