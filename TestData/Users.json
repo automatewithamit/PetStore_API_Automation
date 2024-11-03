@@ -16,5 +16,14 @@
     "email": "narendra.modi@gmail.com",
     "password": "test@123",
     "phone": "123456789"
+  },
+  {
+    "id": "987653",
+    "username": "donald.trump",
+    "firstName": "donald",
+    "lastName": "trump",
+    "email": "donald.trump@gmail.com",
+    "password": "test@123",
+    "phone": "123456789"
   }
 ]

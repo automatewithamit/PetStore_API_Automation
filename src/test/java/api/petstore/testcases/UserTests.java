@@ -44,6 +44,8 @@ public class UserTests extends  BaseTest{
     ExtentReportManager.getTest().log(Status.INFO, "User with username : '"+ user.getUsername() + "' CREATED Successfully");
     Logger.info("User with username : '"+ user.getUsername() + "' CREATED Successfully");
     }
+
+
     @Description("This test verifies that User is Fetched using API Get Call")
     @Test(priority = 2)
     public void getUserTest(){
